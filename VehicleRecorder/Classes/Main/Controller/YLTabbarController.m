@@ -66,20 +66,20 @@
 
 - (NSArray *)tabBarItemsAttributesForController {
     NSDictionary *firstTabBarItemsAttributes = @{CYLTabBarItemTitle : @"在路上",
-                                                 CYLTabBarItemImage : @"home_normal",
-                                                 CYLTabBarItemSelectedImage : @"home_highlight",
+                                                 CYLTabBarItemImage : @"tab_img_0",
+                                                 CYLTabBarItemSelectedImage : @"tab_img_0_selected",
                                                  };
     NSDictionary *secondTabBarItemsAttributes = @{CYLTabBarItemTitle : @"摄像机",
-                                                  CYLTabBarItemImage : @"mycity_normal",
-                                                  CYLTabBarItemSelectedImage : @"mycity_highlight",
+                                                  CYLTabBarItemImage : @"tab_img_1",
+                                                  CYLTabBarItemSelectedImage : @"tab_img_1_selected",
                                                   };
     NSDictionary *thirdTabBarItemsAttributes = @{CYLTabBarItemTitle : @"相册",
-                                                 CYLTabBarItemImage : @"message_normal",
-                                                 CYLTabBarItemSelectedImage : @"message_highlight",
+                                                 CYLTabBarItemImage : @"tab_img_2",
+                                                 CYLTabBarItemSelectedImage : @"tab_img_2_selected",
                                                  };
     NSDictionary *fourthTabBarItemsAttributes = @{CYLTabBarItemTitle : @"我",
-                                                  CYLTabBarItemImage : @"account_normal",
-                                                  CYLTabBarItemSelectedImage : @"account_highlight"
+                                                  CYLTabBarItemImage : @"tab_img_3",
+                                                  CYLTabBarItemSelectedImage : @"tab_img_3_selected"
                                                   };
     NSArray *tabBarItemsAttributes = @[
                                        firstTabBarItemsAttributes,
@@ -107,7 +107,7 @@
     // set the text color for selected state
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    selectedAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
     
     // set the text Attributes
     // 设置文字属性

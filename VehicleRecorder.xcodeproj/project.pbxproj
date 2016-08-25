@@ -677,6 +677,7 @@
 				64E872C71D6D9E0E000E9D2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

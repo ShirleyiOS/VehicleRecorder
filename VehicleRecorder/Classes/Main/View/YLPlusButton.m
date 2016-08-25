@@ -29,8 +29,8 @@
     
     // 控件大小,间距大小
     // 注意：一定要根据项目中的图片去调整下面的0.7和0.9，Demo之所以这么设置，因为demo中的 plusButton 的 icon 不是正方形。
-    CGFloat const imageViewEdgeWidth   = self.bounds.size.width * 0.7;
-    CGFloat const imageViewEdgeHeight  = imageViewEdgeWidth * 0.9;
+    CGFloat const imageViewEdgeWidth   = self.bounds.size.width ;
+    CGFloat const imageViewEdgeHeight  = imageViewEdgeWidth ;
     
     CGFloat const centerOfView    = self.bounds.size.width * 0.5;
     CGFloat const labelLineHeight = self.titleLabel.font.lineHeight;
@@ -59,8 +59,8 @@
  *
  */
 + (id)plusButton {
-    CYLPlusButton *button = [[CYLPlusButton alloc] init];
-    UIImage *buttonImage = [UIImage imageNamed:@"post_normal"];
+    YLPlusButton *button = [[YLPlusButton alloc] init];
+    UIImage *buttonImage = [UIImage imageNamed:@"tab_img_add"];
     [button setImage:buttonImage forState:UIControlStateNormal];
 //    [button setTitle:@"发布" forState:UIControlStateNormal];
 //    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
