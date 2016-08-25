@@ -1,0 +1,20 @@
+//
+//  JACommentController.h
+//  JinAiWang
+//
+//  Created by JoshuaLam on 15/1/8.
+//  Copyright (c) 2015年 Jinaiwang. All rights reserved.
+//
+
+#import "JABaseViewController.h"
+
+typedef void(^CommentBlock)(NSString *comment);
+
+@interface JACommentController : JABaseViewController
+@property (nonatomic, copy) CommentBlock commentBlock;
+
+/**
+ *  dismiss该窗口
+ */
+- (void)handleDismiss;
+@end

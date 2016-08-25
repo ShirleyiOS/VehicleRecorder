@@ -1,0 +1,24 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "25b6b9e4-0dbc-49bf-ba57-98b178508e0a++989" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "25b6b9e4-0dbc-49bf-ba57-98b178508e0a++989" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "228605A2-B4BB-48AA-8A19-B73EF16B8432",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "25b6b9e4-0dbc-49bf-ba57-98b178508e0a++989" : "VehicleRecorder\/VehicleRecorder\/Classes\/Main\/View\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VehicleRecorder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VehicleRecorder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/182.254.191.205\/jinai",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25b6b9e4-0dbc-49bf-ba57-98b178508e0a++989"
+    }
+  ]
+}

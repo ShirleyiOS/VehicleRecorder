@@ -8,24 +8,91 @@
 
 /* Begin PBXBuildFile section */
 		64E872B31D6D9E0E000E9D2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872B21D6D9E0E000E9D2A /* main.m */; };
-		64E872B61D6D9E0E000E9D2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872B51D6D9E0E000E9D2A /* AppDelegate.m */; };
-		64E872B91D6D9E0E000E9D2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872B81D6D9E0E000E9D2A /* ViewController.m */; };
-		64E872BC1D6D9E0E000E9D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E872BA1D6D9E0E000E9D2A /* Main.storyboard */; };
 		64E872BE1D6D9E0E000E9D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E872BD1D6D9E0E000E9D2A /* Assets.xcassets */; };
 		64E872C11D6D9E0E000E9D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E872BF1D6D9E0E000E9D2A /* LaunchScreen.storyboard */; };
+		64E872CE1D6D9F0D000E9D2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872CD1D6D9F0D000E9D2A /* AppDelegate.m */; };
+		64E872D31D6DA3B9000E9D2A /* YLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872D21D6DA3B9000E9D2A /* YLNavigationController.m */; };
+		64E872EC1D6DA3E3000E9D2A /* CALayer+LayerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872D61D6DA3E3000E9D2A /* CALayer+LayerColor.m */; };
+		64E872ED1D6DA3E3000E9D2A /* NSString+Hashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872D91D6DA3E3000E9D2A /* NSString+Hashing.m */; };
+		64E872EE1D6DA3E3000E9D2A /* NSString+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872DB1D6DA3E3000E9D2A /* NSString+XY.m */; };
+		64E872EF1D6DA3E3000E9D2A /* UIAlertController+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872DD1D6DA3E3000E9D2A /* UIAlertController+XY.m */; };
+		64E872F01D6DA3E3000E9D2A /* UIBarButtonItem+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872DF1D6DA3E3000E9D2A /* UIBarButtonItem+XY.m */; };
+		64E872F11D6DA3E3000E9D2A /* UIButton+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872E11D6DA3E3000E9D2A /* UIButton+XY.m */; };
+		64E872F21D6DA3E3000E9D2A /* UIImage+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872E31D6DA3E3000E9D2A /* UIImage+XY.m */; };
+		64E872F31D6DA3E3000E9D2A /* UIScrollView+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872E51D6DA3E3000E9D2A /* UIScrollView+XY.m */; };
+		64E872F41D6DA3E3000E9D2A /* UITableViewCell+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872E71D6DA3E3000E9D2A /* UITableViewCell+XY.m */; };
+		64E872F51D6DA3E3000E9D2A /* UITextField+XY.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872E91D6DA3E3000E9D2A /* UITextField+XY.m */; };
+		64E872F61D6DA3E3000E9D2A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872EB1D6DA3E3000E9D2A /* UIView+Extension.m */; };
+		64E872FC1D6DA543000E9D2A /* YLBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872FB1D6DA543000E9D2A /* YLBaseViewController.m */; };
+		64E873171D6DA7E7000E9D2A /* CYLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873101D6DA7E7000E9D2A /* CYLPlusButton.m */; };
+		64E873181D6DA7E7000E9D2A /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873121D6DA7E7000E9D2A /* CYLTabBar.m */; };
+		64E873191D6DA7E7000E9D2A /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873141D6DA7E7000E9D2A /* CYLTabBarController.m */; };
+		64E8731A1D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873161D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m */; };
+		64E873221D6E8592000E9D2A /* YLOnTheRoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873211D6E8592000E9D2A /* YLOnTheRoadViewController.m */; };
+		64E8732A1D6E89F1000E9D2A /* YLVidiconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873291D6E89F1000E9D2A /* YLVidiconViewController.m */; };
+		64E8733B1D6E8AE9000E9D2A /* YLAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E8733A1D6E8AE9000E9D2A /* YLAlbumViewController.m */; };
+		64E8733E1D6E8AF4000E9D2A /* YLPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E8733D1D6E8AF4000E9D2A /* YLPersonalViewController.m */; };
+		64E873411D6E8EF3000E9D2A /* YLTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873401D6E8EF3000E9D2A /* YLTabbarController.m */; };
+		64E873461D6E92BE000E9D2A /* YLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873451D6E92BE000E9D2A /* YLPlusButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64E872AE1D6D9E0E000E9D2A /* VehicleRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E872B21D6D9E0E000E9D2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		64E872B41D6D9E0E000E9D2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		64E872B51D6D9E0E000E9D2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		64E872B71D6D9E0E000E9D2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		64E872B81D6D9E0E000E9D2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		64E872BB1D6D9E0E000E9D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		64E872BD1D6D9E0E000E9D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E872C01D6D9E0E000E9D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E872C21D6D9E0E000E9D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E872CC1D6D9F0D000E9D2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64E872CD1D6D9F0D000E9D2A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64E872CF1D6D9F32000E9D2A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		64E872D11D6DA3B9000E9D2A /* YLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNavigationController.h; sourceTree = "<group>"; };
+		64E872D21D6DA3B9000E9D2A /* YLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNavigationController.m; sourceTree = "<group>"; };
+		64E872D51D6DA3E3000E9D2A /* CALayer+LayerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LayerColor.h"; sourceTree = "<group>"; };
+		64E872D61D6DA3E3000E9D2A /* CALayer+LayerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LayerColor.m"; sourceTree = "<group>"; };
+		64E872D81D6DA3E3000E9D2A /* NSString+Hashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hashing.h"; sourceTree = "<group>"; };
+		64E872D91D6DA3E3000E9D2A /* NSString+Hashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hashing.m"; sourceTree = "<group>"; };
+		64E872DA1D6DA3E3000E9D2A /* NSString+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XY.h"; sourceTree = "<group>"; };
+		64E872DB1D6DA3E3000E9D2A /* NSString+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XY.m"; sourceTree = "<group>"; };
+		64E872DC1D6DA3E3000E9D2A /* UIAlertController+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+XY.h"; sourceTree = "<group>"; };
+		64E872DD1D6DA3E3000E9D2A /* UIAlertController+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+XY.m"; sourceTree = "<group>"; };
+		64E872DE1D6DA3E3000E9D2A /* UIBarButtonItem+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+XY.h"; sourceTree = "<group>"; };
+		64E872DF1D6DA3E3000E9D2A /* UIBarButtonItem+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+XY.m"; sourceTree = "<group>"; };
+		64E872E01D6DA3E3000E9D2A /* UIButton+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XY.h"; sourceTree = "<group>"; };
+		64E872E11D6DA3E3000E9D2A /* UIButton+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XY.m"; sourceTree = "<group>"; };
+		64E872E21D6DA3E3000E9D2A /* UIImage+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XY.h"; sourceTree = "<group>"; };
+		64E872E31D6DA3E3000E9D2A /* UIImage+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XY.m"; sourceTree = "<group>"; };
+		64E872E41D6DA3E3000E9D2A /* UIScrollView+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+XY.h"; sourceTree = "<group>"; };
+		64E872E51D6DA3E3000E9D2A /* UIScrollView+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+XY.m"; sourceTree = "<group>"; };
+		64E872E61D6DA3E3000E9D2A /* UITableViewCell+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+XY.h"; sourceTree = "<group>"; };
+		64E872E71D6DA3E3000E9D2A /* UITableViewCell+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+XY.m"; sourceTree = "<group>"; };
+		64E872E81D6DA3E3000E9D2A /* UITextField+XY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+XY.h"; sourceTree = "<group>"; };
+		64E872E91D6DA3E3000E9D2A /* UITextField+XY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XY.m"; sourceTree = "<group>"; };
+		64E872EA1D6DA3E3000E9D2A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		64E872EB1D6DA3E3000E9D2A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		64E872F81D6DA41D000E9D2A /* YLMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLMarco.h; sourceTree = "<group>"; };
+		64E872FA1D6DA543000E9D2A /* YLBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLBaseViewController.h; sourceTree = "<group>"; };
+		64E872FB1D6DA543000E9D2A /* YLBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLBaseViewController.m; sourceTree = "<group>"; };
+		64E8730E1D6DA7E7000E9D2A /* CYLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLConstants.h; sourceTree = "<group>"; };
+		64E8730F1D6DA7E7000E9D2A /* CYLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLPlusButton.h; sourceTree = "<group>"; };
+		64E873101D6DA7E7000E9D2A /* CYLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLPlusButton.m; sourceTree = "<group>"; };
+		64E873111D6DA7E7000E9D2A /* CYLTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBar.h; sourceTree = "<group>"; };
+		64E873121D6DA7E7000E9D2A /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
+		64E873131D6DA7E7000E9D2A /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
+		64E873141D6DA7E7000E9D2A /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
+		64E873151D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CYLTabBarControllerExtention.h"; sourceTree = "<group>"; };
+		64E873161D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CYLTabBarControllerExtention.m"; sourceTree = "<group>"; };
+		64E873201D6E8592000E9D2A /* YLOnTheRoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLOnTheRoadViewController.h; sourceTree = "<group>"; };
+		64E873211D6E8592000E9D2A /* YLOnTheRoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLOnTheRoadViewController.m; sourceTree = "<group>"; };
+		64E873281D6E89F1000E9D2A /* YLVidiconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVidiconViewController.h; sourceTree = "<group>"; };
+		64E873291D6E89F1000E9D2A /* YLVidiconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLVidiconViewController.m; sourceTree = "<group>"; };
+		64E873391D6E8AE9000E9D2A /* YLAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLAlbumViewController.h; sourceTree = "<group>"; };
+		64E8733A1D6E8AE9000E9D2A /* YLAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLAlbumViewController.m; sourceTree = "<group>"; };
+		64E8733C1D6E8AF4000E9D2A /* YLPersonalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPersonalViewController.h; sourceTree = "<group>"; };
+		64E8733D1D6E8AF4000E9D2A /* YLPersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPersonalViewController.m; sourceTree = "<group>"; };
+		64E8733F1D6E8EF3000E9D2A /* YLTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLTabbarController.h; sourceTree = "<group>"; };
+		64E873401D6E8EF3000E9D2A /* YLTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTabbarController.m; sourceTree = "<group>"; };
+		64E873441D6E92BE000E9D2A /* YLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlusButton.h; sourceTree = "<group>"; };
+		64E873451D6E92BE000E9D2A /* YLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlusButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +125,9 @@
 		64E872B01D6D9E0E000E9D2A /* VehicleRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				64E872B41D6D9E0E000E9D2A /* AppDelegate.h */,
-				64E872B51D6D9E0E000E9D2A /* AppDelegate.m */,
-				64E872B71D6D9E0E000E9D2A /* ViewController.h */,
-				64E872B81D6D9E0E000E9D2A /* ViewController.m */,
-				64E872BA1D6D9E0E000E9D2A /* Main.storyboard */,
+				64E872C81D6D9E9A000E9D2A /* Classes */,
 				64E872BD1D6D9E0E000E9D2A /* Assets.xcassets */,
 				64E872BF1D6D9E0E000E9D2A /* LaunchScreen.storyboard */,
-				64E872C21D6D9E0E000E9D2A /* Info.plist */,
 				64E872B11D6D9E0E000E9D2A /* Supporting Files */,
 			);
 			path = VehicleRecorder;
@@ -74,9 +136,308 @@
 		64E872B11D6D9E0E000E9D2A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				64E872C21D6D9E0E000E9D2A /* Info.plist */,
 				64E872B21D6D9E0E000E9D2A /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64E872C81D6D9E9A000E9D2A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				64E872C91D6D9ED2000E9D2A /* Base */,
+				64E872CA1D6D9ED2000E9D2A /* Main */,
+				64E8731B1D6E82B2000E9D2A /* OnTheRoad */,
+				64E873231D6E894D000E9D2A /* Vidicon */,
+				64E8732B1D6E8A86000E9D2A /* Album */,
+				64E873341D6E8ACE000E9D2A /* Personal */,
+				64E872CB1D6D9ED2000E9D2A /* Other */,
+				64E872FE1D6DA729000E9D2A /* Library */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		64E872C91D6D9ED2000E9D2A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				64E872F91D6DA52E000E9D2A /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		64E872CA1D6D9ED2000E9D2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				64E872D01D6DA375000E9D2A /* Controller */,
+				64E873431D6E92A3000E9D2A /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		64E872CB1D6D9ED2000E9D2A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				64E872D41D6DA3E3000E9D2A /* Category */,
+				64E872CC1D6D9F0D000E9D2A /* AppDelegate.h */,
+				64E872CD1D6D9F0D000E9D2A /* AppDelegate.m */,
+				64E872CF1D6D9F32000E9D2A /* PrefixHeader.pch */,
+				64E872F81D6DA41D000E9D2A /* YLMarco.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		64E872D01D6DA375000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E872D11D6DA3B9000E9D2A /* YLNavigationController.h */,
+				64E872D21D6DA3B9000E9D2A /* YLNavigationController.m */,
+				64E8733F1D6E8EF3000E9D2A /* YLTabbarController.h */,
+				64E873401D6E8EF3000E9D2A /* YLTabbarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E872D41D6DA3E3000E9D2A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				64E872D51D6DA3E3000E9D2A /* CALayer+LayerColor.h */,
+				64E872D61D6DA3E3000E9D2A /* CALayer+LayerColor.m */,
+				64E872D71D6DA3E3000E9D2A /* Hash */,
+				64E872DA1D6DA3E3000E9D2A /* NSString+XY.h */,
+				64E872DB1D6DA3E3000E9D2A /* NSString+XY.m */,
+				64E872DC1D6DA3E3000E9D2A /* UIAlertController+XY.h */,
+				64E872DD1D6DA3E3000E9D2A /* UIAlertController+XY.m */,
+				64E872DE1D6DA3E3000E9D2A /* UIBarButtonItem+XY.h */,
+				64E872DF1D6DA3E3000E9D2A /* UIBarButtonItem+XY.m */,
+				64E872E01D6DA3E3000E9D2A /* UIButton+XY.h */,
+				64E872E11D6DA3E3000E9D2A /* UIButton+XY.m */,
+				64E872E21D6DA3E3000E9D2A /* UIImage+XY.h */,
+				64E872E31D6DA3E3000E9D2A /* UIImage+XY.m */,
+				64E872E41D6DA3E3000E9D2A /* UIScrollView+XY.h */,
+				64E872E51D6DA3E3000E9D2A /* UIScrollView+XY.m */,
+				64E872E61D6DA3E3000E9D2A /* UITableViewCell+XY.h */,
+				64E872E71D6DA3E3000E9D2A /* UITableViewCell+XY.m */,
+				64E872E81D6DA3E3000E9D2A /* UITextField+XY.h */,
+				64E872E91D6DA3E3000E9D2A /* UITextField+XY.m */,
+				64E872EA1D6DA3E3000E9D2A /* UIView+Extension.h */,
+				64E872EB1D6DA3E3000E9D2A /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		64E872D71D6DA3E3000E9D2A /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				64E872D81D6DA3E3000E9D2A /* NSString+Hashing.h */,
+				64E872D91D6DA3E3000E9D2A /* NSString+Hashing.m */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		64E872F91D6DA52E000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E872FA1D6DA543000E9D2A /* YLBaseViewController.h */,
+				64E872FB1D6DA543000E9D2A /* YLBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E872FE1D6DA729000E9D2A /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				64E8730D1D6DA7E7000E9D2A /* CYLTabBarController */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		64E8730D1D6DA7E7000E9D2A /* CYLTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				64E8730E1D6DA7E7000E9D2A /* CYLConstants.h */,
+				64E8730F1D6DA7E7000E9D2A /* CYLPlusButton.h */,
+				64E873101D6DA7E7000E9D2A /* CYLPlusButton.m */,
+				64E873111D6DA7E7000E9D2A /* CYLTabBar.h */,
+				64E873121D6DA7E7000E9D2A /* CYLTabBar.m */,
+				64E873131D6DA7E7000E9D2A /* CYLTabBarController.h */,
+				64E873141D6DA7E7000E9D2A /* CYLTabBarController.m */,
+				64E873151D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.h */,
+				64E873161D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m */,
+			);
+			path = CYLTabBarController;
+			sourceTree = "<group>";
+		};
+		64E8731B1D6E82B2000E9D2A /* OnTheRoad */ = {
+			isa = PBXGroup;
+			children = (
+				64E8731E1D6E8437000E9D2A /* Network */,
+				64E8731C1D6E8437000E9D2A /* Controller */,
+				64E8731F1D6E8437000E9D2A /* View */,
+				64E8731D1D6E8437000E9D2A /* Model */,
+			);
+			path = OnTheRoad;
+			sourceTree = "<group>";
+		};
+		64E8731C1D6E8437000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E873201D6E8592000E9D2A /* YLOnTheRoadViewController.h */,
+				64E873211D6E8592000E9D2A /* YLOnTheRoadViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E8731D1D6E8437000E9D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64E8731E1D6E8437000E9D2A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		64E8731F1D6E8437000E9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64E873231D6E894D000E9D2A /* Vidicon */ = {
+			isa = PBXGroup;
+			children = (
+				64E873261D6E89DD000E9D2A /* Network */,
+				64E873241D6E89DD000E9D2A /* Controller */,
+				64E873271D6E89DD000E9D2A /* View */,
+				64E873251D6E89DD000E9D2A /* Model */,
+			);
+			path = Vidicon;
+			sourceTree = "<group>";
+		};
+		64E873241D6E89DD000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E873281D6E89F1000E9D2A /* YLVidiconViewController.h */,
+				64E873291D6E89F1000E9D2A /* YLVidiconViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E873251D6E89DD000E9D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64E873261D6E89DD000E9D2A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		64E873271D6E89DD000E9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64E8732B1D6E8A86000E9D2A /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				64E873321D6E8ABB000E9D2A /* Network */,
+				64E873301D6E8ABB000E9D2A /* Controller */,
+				64E873331D6E8ABB000E9D2A /* View */,
+				64E873311D6E8ABB000E9D2A /* Model */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		64E873301D6E8ABB000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E873391D6E8AE9000E9D2A /* YLAlbumViewController.h */,
+				64E8733A1D6E8AE9000E9D2A /* YLAlbumViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E873311D6E8ABB000E9D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64E873321D6E8ABB000E9D2A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		64E873331D6E8ABB000E9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64E873341D6E8ACE000E9D2A /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				64E873371D6E8ACE000E9D2A /* Network */,
+				64E873351D6E8ACE000E9D2A /* Controller */,
+				64E873381D6E8ACE000E9D2A /* View */,
+				64E873361D6E8ACE000E9D2A /* Model */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		64E873351D6E8ACE000E9D2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				64E8733C1D6E8AF4000E9D2A /* YLPersonalViewController.h */,
+				64E8733D1D6E8AF4000E9D2A /* YLPersonalViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		64E873361D6E8ACE000E9D2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		64E873371D6E8ACE000E9D2A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		64E873381D6E8ACE000E9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		64E873431D6E92A3000E9D2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				64E873441D6E92BE000E9D2A /* YLPlusButton.h */,
+				64E873451D6E92BE000E9D2A /* YLPlusButton.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +466,7 @@
 		64E872A61D6D9E0E000E9D2A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = YL;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = auvi;
 				TargetAttributes = {
@@ -138,7 +500,6 @@
 			files = (
 				64E872C11D6D9E0E000E9D2A /* LaunchScreen.storyboard in Resources */,
 				64E872BE1D6D9E0E000E9D2A /* Assets.xcassets in Resources */,
-				64E872BC1D6D9E0E000E9D2A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,23 +510,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64E872B91D6D9E0E000E9D2A /* ViewController.m in Sources */,
-				64E872B61D6D9E0E000E9D2A /* AppDelegate.m in Sources */,
+				64E873181D6DA7E7000E9D2A /* CYLTabBar.m in Sources */,
+				64E872F41D6DA3E3000E9D2A /* UITableViewCell+XY.m in Sources */,
+				64E873461D6E92BE000E9D2A /* YLPlusButton.m in Sources */,
+				64E872CE1D6D9F0D000E9D2A /* AppDelegate.m in Sources */,
+				64E8733B1D6E8AE9000E9D2A /* YLAlbumViewController.m in Sources */,
+				64E873171D6DA7E7000E9D2A /* CYLPlusButton.m in Sources */,
+				64E872F01D6DA3E3000E9D2A /* UIBarButtonItem+XY.m in Sources */,
 				64E872B31D6D9E0E000E9D2A /* main.m in Sources */,
+				64E872D31D6DA3B9000E9D2A /* YLNavigationController.m in Sources */,
+				64E872EC1D6DA3E3000E9D2A /* CALayer+LayerColor.m in Sources */,
+				64E873191D6DA7E7000E9D2A /* CYLTabBarController.m in Sources */,
+				64E872EE1D6DA3E3000E9D2A /* NSString+XY.m in Sources */,
+				64E873221D6E8592000E9D2A /* YLOnTheRoadViewController.m in Sources */,
+				64E873411D6E8EF3000E9D2A /* YLTabbarController.m in Sources */,
+				64E8733E1D6E8AF4000E9D2A /* YLPersonalViewController.m in Sources */,
+				64E872F51D6DA3E3000E9D2A /* UITextField+XY.m in Sources */,
+				64E872F21D6DA3E3000E9D2A /* UIImage+XY.m in Sources */,
+				64E8731A1D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
+				64E872FC1D6DA543000E9D2A /* YLBaseViewController.m in Sources */,
+				64E872EF1D6DA3E3000E9D2A /* UIAlertController+XY.m in Sources */,
+				64E872F61D6DA3E3000E9D2A /* UIView+Extension.m in Sources */,
+				64E872F11D6DA3E3000E9D2A /* UIButton+XY.m in Sources */,
+				64E8732A1D6E89F1000E9D2A /* YLVidiconViewController.m in Sources */,
+				64E872F31D6DA3E3000E9D2A /* UIScrollView+XY.m in Sources */,
+				64E872ED1D6DA3E3000E9D2A /* NSString+Hashing.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		64E872BA1D6D9E0E000E9D2A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				64E872BB1D6D9E0E000E9D2A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		64E872BF1D6D9E0E000E9D2A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,7 +636,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleRecorder/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = VehicleRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = auvi.VehicleRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +649,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleRecorder/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = VehicleRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = auvi.VehicleRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";

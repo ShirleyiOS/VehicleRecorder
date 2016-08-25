@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  VehicleRecorder
+//
+//  Created by ecsage on 16/8/24.
+//  Copyright © 2016年 auvi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "YLMarco.h"
+
+// 分类
+#import "UIView+Extension.h"
+#import "UIImage+XY.h"
+#import "UIButton+XY.h"
+#import "NSString+XY.h"
+#import "CALayer+LayerColor.h"
+#import "UIScrollView+XY.h"
+#import "NSString+Hashing.h" // md5加密
+#import "UITextField+XY.h" // 输入内容是否有效
+
+
+
+#endif /* PrefixHeader_pch */
