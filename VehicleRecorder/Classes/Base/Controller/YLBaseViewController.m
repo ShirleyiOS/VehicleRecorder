@@ -19,9 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    
     // 设置背景色
-//    self.view.backgroundColor = kColorBgLightGray;
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = MyColorFromHex(0xf3f3f3);    
     
     // 设置导航返回键
     UIBarButtonItem *leftItem =  [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];

@@ -48,6 +48,7 @@
     //title position 位置
     self.titleLabel.bounds = CGRectMake(0, 0, self.bounds.size.width, labelLineHeight);
     self.titleLabel.center = CGPointMake(centerOfView, centerOfTitleLabel);
+    
 }
 
 #pragma mark -

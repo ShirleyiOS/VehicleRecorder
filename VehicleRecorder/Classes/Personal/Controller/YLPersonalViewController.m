@@ -11,22 +11,37 @@
 @interface YLPersonalViewController()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSArray *dataArray;
+@property (nonatomic, strong) UIView *headView;
 @end
 
 
 @implementation YLPersonalViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 - (void)viewDidLoad{
     [super viewDidLoad];
-    self.navigationController.navigationBarHidden = YES;
     _tableView = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStyleGrouped];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     [self.view addSubview:_tableView];
+    [self createHeadView];
     _dataArray = @[@[@{@"mine_activity":@"我的活动"}],@[@{@"mine_set":@"设置"}],@[@{@"mine_help":@"帮助"},@{@"mine_about":@"关于"}]];
 }
 
+
+- (void)createHeadView{
+    _headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth * 9.0/16.0)];
+    _headView.backgroundColor = kDefaultColor;
+    _tableView.tableHeaderView = _headView;
+}
+
+
+#pragma mark - tableViewDelegate&&DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return _dataArray.count;
 }
@@ -47,5 +62,12 @@
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 10;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
+    return 0.00001;
+}
 
 @end

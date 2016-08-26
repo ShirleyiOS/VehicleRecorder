@@ -83,3 +83,14 @@ alpha:(_a)] // 带有透明度的hex颜色转换
 #define kNSDocumentDirectory         [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
 
 #endif /* YLMarco_h */
+
+
+
+/**
+ *  VehicleRecorder
+ */
+#define kDefaultColor   MYColor(237, 80, 71)
+
+
+
+

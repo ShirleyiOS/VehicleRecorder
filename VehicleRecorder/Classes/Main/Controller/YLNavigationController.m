@@ -41,8 +41,9 @@
     //    navBar.tintColor = [UIColor whiteColor];
     
     // 设置背景
-    UIImage *backgroundImg = [UIImage imageNamed:@"tabbar底色-黑"];
+    UIImage *backgroundImg = [[UIImage alloc] init];
     [navBar setBackgroundImage:backgroundImg forBarMetrics:UIBarMetricsDefault];
+    navBar.barTintColor = kDefaultColor;
 }
 
 /**
@@ -67,7 +68,8 @@
     [navBar setTitleTextAttributes:textAttrs];
     
     // 去掉底部shadow黑线
-    [navBar setShadowImage:[UIImage imageWithColor:[UIColor clearColor] size:CGSizeMake(kScreenWidth, 3)]];
+   // [navBar setShadowImage:[UIImage imageWithColor:[UIColor clearColor] size:CGSizeMake(kScreenWidth, 3)]];
+    navBar.shadowImage = [[UIImage alloc] init];
 }
 
 /**
@@ -95,7 +97,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationBar.translucent = YES;
+    self.navigationBar.translucent = NO;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
