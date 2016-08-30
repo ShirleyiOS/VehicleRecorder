@@ -8,8 +8,10 @@
 
 #import "YLPlusButton.h"
 #import "CYLTabBarController.h"
-
-@implementation YLPlusButton
+#import "YLCategoryBtn.h"
+@implementation YLPlusButton{
+    NSMutableArray *_btnArray;
+}
 
 + (void)load {
     [super registerPlusButton];
@@ -63,12 +65,6 @@
     YLPlusButton *button = [[YLPlusButton alloc] init];
     UIImage *buttonImage = [UIImage imageNamed:@"tab_img_add"];
     [button setImage:buttonImage forState:UIControlStateNormal];
-//    [button setTitle:@"发布" forState:UIControlStateNormal];
-//    [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-//    
-//    [button setTitle:@"选中" forState:UIControlStateSelected];
-//    [button setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
-    
     button.titleLabel.font = [UIFont systemFontOfSize:9.5];
     [button sizeToFit]; // or set frame in this way `button.frame = CGRectMake(0.0, 0.0, 250, 100);`
     //    button.frame = CGRectMake(0.0, 0.0, 250, 100);
@@ -76,27 +72,7 @@
     [button addTarget:button action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];
     return button;
 }
-/*
- *
- Create a custom UIButton without title and add it to the center of our tab bar
- *
- */
-//+ (id)plusButton
-//{
-//
-//    UIImage *buttonImage = [UIImage imageNamed:@"hood.png"];
-//    UIImage *highlightImage = [UIImage imageNamed:@"hood-selected.png"];
-//
-//    CYLPlusButtonSubclass* button = [CYLPlusButtonSubclass buttonWithType:UIButtonTypeCustom];
-//
-//    button.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin;
-//    button.frame = CGRectMake(0.0, 0.0, buttonImage.size.width, buttonImage.size.height);
-//    [button setBackgroundImage:buttonImage forState:UIControlStateNormal];
-//    [button setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
-//    [button addTarget:button action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];
-//
-//    return button;
-//}
+
 
 #pragma mark -
 #pragma mark - Event Response
@@ -104,13 +80,75 @@
 - (void)clickPublish {
     CYLTabBarController *tabBarController = [self cyl_tabBarController];
     UIViewController *viewController = tabBarController.selectedViewController;
+ 
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    view.backgroundColor = [UIColor whiteColor];
+    [viewController.view addSubview:view];
+    viewController.tabBarController.tabBar.hidden = YES;
     
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
-                                                             delegate:nil
-                                                    cancelButtonTitle:@"取消"
-                                               destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"拍照", @"从相册选取", @"淘宝一键转卖", nil];
-    [actionSheet showInView:viewController.view];
+    NSArray *imageArray = @[@"otw_share_image",@"otw_share_video",@"otw_share_track",@"otw_share_report",@"otw_share_activity"];
+    NSArray *titleArray = @[@"图片分享",@"视频分享",@"轨迹分享",@"违章举报",@"创建活动"];
+    _btnArray = [NSMutableArray array];
+    int col = 3;
+    int btnWidth = kScreenWidth / col;
+    int btnHeight = 100;
+    for (int i = 0; i < imageArray.count; i++) {
+        YLCategoryBtn *btn = [[YLCategoryBtn alloc] initWithFrame:CGRectMake(i % col  * btnWidth, i / col * btnHeight + (kScreenHeight - 300), btnWidth, btnHeight)];
+        btn.tag = 1000 + i;
+        [btn setTitle:titleArray[i] forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:imageArray[i]] forState:UIControlStateNormal];
+        [view addSubview:btn];
+        [_btnArray addObject:btn];
+        CGAffineTransform trans = CGAffineTransformTranslate(btn.transform, 0, kScreenHeight);
+        btn.transform = trans;
+        //清空偏移量的动画
+        [UIView animateWithDuration:0.25 delay:i/10.0 options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+            //清空偏移量
+            btn.transform = CGAffineTransformIdentity;
+        } completion:^(BOOL finished) {
+            //抖动动画
+            CAKeyframeAnimation *shakeAnim = [CAKeyframeAnimation animation];
+            shakeAnim.keyPath = @"transform.translation.y";
+            shakeAnim.duration = 0.15;
+            CGFloat delta = 10;
+            shakeAnim.values = @[@0, @(-delta), @(delta), @0];
+            shakeAnim.repeatCount = 1;
+            [btn.layer addAnimation:shakeAnim forKey:nil];
+        }];
+    }
+    int closeBtnWidth = 20;
+    int closeBtnHeight = closeBtnWidth;
+    UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake((kScreenWidth - closeBtnWidth) / 2, kScreenHeight - closeBtnHeight - 20, closeBtnWidth, closeBtnHeight)];
+    [closeBtn setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+    [closeBtn addTarget:self action:@selector(closeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:closeBtn];
+}
+
+- (void)closeBtnClick:(UIButton *)button{
+    for (UIView *view in button.superview.subviews) {
+        if ([view isKindOfClass:[YLCategoryBtn class]]) {
+            YLCategoryBtn *btn = (YLCategoryBtn *)view;
+            //清空偏移量的动画
+            CGFloat delayTime = (_btnArray.count - 1 - (btn.tag - 1000)) / 10.0;
+            [UIView animateWithDuration:0.25 delay:delayTime options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+                //偏移量
+                btn.transform = CGAffineTransformTranslate(btn.transform, 0, kScreenHeight);
+                
+            } completion:nil];
+        }
+    }
+    
+    CGFloat delayTime = (_btnArray.count - 1)/10.0;
+    [UIView animateWithDuration:0.1 delay:delayTime options:UIViewAnimationOptionTransitionNone animations:^{
+        button.superview.frame = CGRectMake(button.superview.frame.origin.x, button.superview.frame.origin.y + kScreenHeight, button.superview.frame.size.width, button.superview.frame.size.height);
+    } completion:^(BOOL finished){
+        [button.superview removeFromSuperview];
+        CYLTabBarController *tabBarController = [self cyl_tabBarController];
+        UIViewController *viewController = tabBarController.selectedViewController;
+        viewController.tabBarController.tabBar.hidden = NO;
+    }];
+    
+    
 }
 
 

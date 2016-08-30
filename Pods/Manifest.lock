@@ -1,0 +1,17 @@
+PODS:
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - YYCategories (1.0.3):
+    - YYCategories/no-arc (= 1.0.3)
+  - YYCategories/no-arc (1.0.3)
+
+DEPENDENCIES:
+  - SDWebImage (~> 3.7.5)
+  - YYCategories (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  YYCategories: 0fd4d9eb0994d8d0e355beb4081c8f7202a82b7b
+
+COCOAPODS: 0.38.2

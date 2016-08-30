@@ -11,4 +11,5 @@ dependencies: \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Other/Category/Hash/NSString+Hashing.h \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Other/Category/UITextField+XY.h \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Personal/Controller/YLPersonalViewController.h \
-  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Base/Controller/YLBaseViewController.h
+  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Base/Controller/YLBaseViewController.h \
+  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Login/YLLoginViewController.h

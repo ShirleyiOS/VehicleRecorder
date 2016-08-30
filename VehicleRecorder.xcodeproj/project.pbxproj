@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AF5F18EED0414E94F30FF98 /* libPods-VehicleRecorder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D80D76F969BBB9839C3164 /* libPods-VehicleRecorder.a */; };
 		64E872B31D6D9E0E000E9D2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E872B21D6D9E0E000E9D2A /* main.m */; };
 		64E872BE1D6D9E0E000E9D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E872BD1D6D9E0E000E9D2A /* Assets.xcassets */; };
 		64E872C11D6D9E0E000E9D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E872BF1D6D9E0E000E9D2A /* LaunchScreen.storyboard */; };
@@ -34,9 +35,17 @@
 		64E8733E1D6E8AF4000E9D2A /* YLPersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E8733D1D6E8AF4000E9D2A /* YLPersonalViewController.m */; };
 		64E873411D6E8EF3000E9D2A /* YLTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873401D6E8EF3000E9D2A /* YLTabbarController.m */; };
 		64E873461D6E92BE000E9D2A /* YLPlusButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E873451D6E92BE000E9D2A /* YLPlusButton.m */; };
+		C67C10481D71241F00D4F6FE /* YLVideoSquareHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = C67C10471D71241F00D4F6FE /* YLVideoSquareHeadView.m */; };
+		C67C104B1D7125BD00D4F6FE /* YLCategoryBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C67C104A1D7125BD00D4F6FE /* YLCategoryBtn.m */; };
+		C6888FC91D73DA880032C5E3 /* YLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6888FC81D73DA880032C5E3 /* YLLoginViewController.m */; };
+		C6888FCC1D7423390032C5E3 /* YLRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6888FCB1D7423390032C5E3 /* YLRegisterViewController.m */; };
+		C6888FCF1D7424450032C5E3 /* YLForgotPswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6888FCE1D7424450032C5E3 /* YLForgotPswordViewController.m */; };
+		C6A3A08A1D7028D200B4C318 /* YLNoCameraView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3A0891D7028D200B4C318 /* YLNoCameraView.m */; };
+		C6A3A08E1D70496A00B4C318 /* UIImageLoopScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A3A08D1D70496A00B4C318 /* UIImageLoopScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23ECD9128B8FDCE969FB30AE /* Pods-VehicleRecorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleRecorder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleRecorder/Pods-VehicleRecorder.debug.xcconfig"; sourceTree = "<group>"; };
 		64E872AE1D6D9E0E000E9D2A /* VehicleRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VehicleRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E872B21D6D9E0E000E9D2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64E872BD1D6D9E0E000E9D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +102,22 @@
 		64E873401D6E8EF3000E9D2A /* YLTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTabbarController.m; sourceTree = "<group>"; };
 		64E873441D6E92BE000E9D2A /* YLPlusButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLPlusButton.h; sourceTree = "<group>"; };
 		64E873451D6E92BE000E9D2A /* YLPlusButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPlusButton.m; sourceTree = "<group>"; };
+		B1D98238EA489C6C7FF821D5 /* Pods-VehicleRecorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VehicleRecorder.release.xcconfig"; path = "Pods/Target Support Files/Pods-VehicleRecorder/Pods-VehicleRecorder.release.xcconfig"; sourceTree = "<group>"; };
+		C0D80D76F969BBB9839C3164 /* libPods-VehicleRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VehicleRecorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67C10461D71241F00D4F6FE /* YLVideoSquareHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLVideoSquareHeadView.h; sourceTree = "<group>"; };
+		C67C10471D71241F00D4F6FE /* YLVideoSquareHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLVideoSquareHeadView.m; sourceTree = "<group>"; };
+		C67C10491D7125BD00D4F6FE /* YLCategoryBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLCategoryBtn.h; sourceTree = "<group>"; };
+		C67C104A1D7125BD00D4F6FE /* YLCategoryBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCategoryBtn.m; sourceTree = "<group>"; };
+		C6888FC71D73DA880032C5E3 /* YLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLLoginViewController.h; sourceTree = "<group>"; };
+		C6888FC81D73DA880032C5E3 /* YLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLLoginViewController.m; sourceTree = "<group>"; };
+		C6888FCA1D7423390032C5E3 /* YLRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLRegisterViewController.h; sourceTree = "<group>"; };
+		C6888FCB1D7423390032C5E3 /* YLRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLRegisterViewController.m; sourceTree = "<group>"; };
+		C6888FCD1D7424450032C5E3 /* YLForgotPswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLForgotPswordViewController.h; sourceTree = "<group>"; };
+		C6888FCE1D7424450032C5E3 /* YLForgotPswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLForgotPswordViewController.m; sourceTree = "<group>"; };
+		C6A3A0881D7028D200B4C318 /* YLNoCameraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLNoCameraView.h; sourceTree = "<group>"; };
+		C6A3A0891D7028D200B4C318 /* YLNoCameraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLNoCameraView.m; sourceTree = "<group>"; };
+		C6A3A08C1D70496A00B4C318 /* UIImageLoopScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageLoopScrollView.h; sourceTree = "<group>"; };
+		C6A3A08D1D70496A00B4C318 /* UIImageLoopScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageLoopScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,17 +125,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF5F18EED0414E94F30FF98 /* libPods-VehicleRecorder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		121DFB14548E130C0A2081A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0D80D76F969BBB9839C3164 /* libPods-VehicleRecorder.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64E872A51D6D9E0E000E9D2A = {
 			isa = PBXGroup;
 			children = (
 				64E872B01D6D9E0E000E9D2A /* VehicleRecorder */,
 				64E872AF1D6D9E0E000E9D2A /* Products */,
+				CF52772175760D7F931BE972 /* Pods */,
+				121DFB14548E130C0A2081A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +183,7 @@
 			children = (
 				64E872C91D6D9ED2000E9D2A /* Base */,
 				64E872CA1D6D9ED2000E9D2A /* Main */,
+				C6888FC61D73DA5D0032C5E3 /* Login */,
 				64E8731B1D6E82B2000E9D2A /* OnTheRoad */,
 				64E873231D6E894D000E9D2A /* Vidicon */,
 				64E8732B1D6E8A86000E9D2A /* Album */,
@@ -246,6 +283,7 @@
 		64E872FE1D6DA729000E9D2A /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				C6A3A08B1D70496A00B4C318 /* UIImageLoopScrollView */,
 				64E8730D1D6DA7E7000E9D2A /* CYLTabBarController */,
 			);
 			path = Library;
@@ -304,6 +342,10 @@
 		64E8731F1D6E8437000E9D2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C67C10461D71241F00D4F6FE /* YLVideoSquareHeadView.h */,
+				C67C10471D71241F00D4F6FE /* YLVideoSquareHeadView.m */,
+				C67C10491D7125BD00D4F6FE /* YLCategoryBtn.h */,
+				C67C104A1D7125BD00D4F6FE /* YLCategoryBtn.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +387,8 @@
 		64E873271D6E89DD000E9D2A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C6A3A0881D7028D200B4C318 /* YLNoCameraView.h */,
+				C6A3A0891D7028D200B4C318 /* YLNoCameraView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,6 +484,37 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C6888FC61D73DA5D0032C5E3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C6888FC71D73DA880032C5E3 /* YLLoginViewController.h */,
+				C6888FC81D73DA880032C5E3 /* YLLoginViewController.m */,
+				C6888FCA1D7423390032C5E3 /* YLRegisterViewController.h */,
+				C6888FCB1D7423390032C5E3 /* YLRegisterViewController.m */,
+				C6888FCD1D7424450032C5E3 /* YLForgotPswordViewController.h */,
+				C6888FCE1D7424450032C5E3 /* YLForgotPswordViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C6A3A08B1D70496A00B4C318 /* UIImageLoopScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C6A3A08C1D70496A00B4C318 /* UIImageLoopScrollView.h */,
+				C6A3A08D1D70496A00B4C318 /* UIImageLoopScrollView.m */,
+			);
+			path = UIImageLoopScrollView;
+			sourceTree = "<group>";
+		};
+		CF52772175760D7F931BE972 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23ECD9128B8FDCE969FB30AE /* Pods-VehicleRecorder.debug.xcconfig */,
+				B1D98238EA489C6C7FF821D5 /* Pods-VehicleRecorder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,9 +522,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64E872C51D6D9E0E000E9D2A /* Build configuration list for PBXNativeTarget "VehicleRecorder" */;
 			buildPhases = (
+				51E7FA36E7DB7F3740992FBD /* Check Pods Manifest.lock */,
 				64E872AA1D6D9E0E000E9D2A /* Sources */,
 				64E872AB1D6D9E0E000E9D2A /* Frameworks */,
 				64E872AC1D6D9E0E000E9D2A /* Resources */,
+				EAE1E66C8ADB005667EE30E1 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,6 +582,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		51E7FA36E7DB7F3740992FBD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EAE1E66C8ADB005667EE30E1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VehicleRecorder/Pods-VehicleRecorder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64E872AA1D6D9E0E000E9D2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -512,7 +622,9 @@
 			files = (
 				64E873181D6DA7E7000E9D2A /* CYLTabBar.m in Sources */,
 				64E872F41D6DA3E3000E9D2A /* UITableViewCell+XY.m in Sources */,
+				C6A3A08E1D70496A00B4C318 /* UIImageLoopScrollView.m in Sources */,
 				64E873461D6E92BE000E9D2A /* YLPlusButton.m in Sources */,
+				C67C10481D71241F00D4F6FE /* YLVideoSquareHeadView.m in Sources */,
 				64E872CE1D6D9F0D000E9D2A /* AppDelegate.m in Sources */,
 				64E8733B1D6E8AE9000E9D2A /* YLAlbumViewController.m in Sources */,
 				64E873171D6DA7E7000E9D2A /* CYLPlusButton.m in Sources */,
@@ -521,6 +633,7 @@
 				64E872D31D6DA3B9000E9D2A /* YLNavigationController.m in Sources */,
 				64E872EC1D6DA3E3000E9D2A /* CALayer+LayerColor.m in Sources */,
 				64E873191D6DA7E7000E9D2A /* CYLTabBarController.m in Sources */,
+				C6888FCF1D7424450032C5E3 /* YLForgotPswordViewController.m in Sources */,
 				64E872EE1D6DA3E3000E9D2A /* NSString+XY.m in Sources */,
 				64E873221D6E8592000E9D2A /* YLOnTheRoadViewController.m in Sources */,
 				64E873411D6E8EF3000E9D2A /* YLTabbarController.m in Sources */,
@@ -529,10 +642,14 @@
 				64E872F21D6DA3E3000E9D2A /* UIImage+XY.m in Sources */,
 				64E8731A1D6DA7E7000E9D2A /* UIViewController+CYLTabBarControllerExtention.m in Sources */,
 				64E872FC1D6DA543000E9D2A /* YLBaseViewController.m in Sources */,
+				C6888FCC1D7423390032C5E3 /* YLRegisterViewController.m in Sources */,
 				64E872EF1D6DA3E3000E9D2A /* UIAlertController+XY.m in Sources */,
 				64E872F61D6DA3E3000E9D2A /* UIView+Extension.m in Sources */,
 				64E872F11D6DA3E3000E9D2A /* UIButton+XY.m in Sources */,
+				C67C104B1D7125BD00D4F6FE /* YLCategoryBtn.m in Sources */,
 				64E8732A1D6E89F1000E9D2A /* YLVidiconViewController.m in Sources */,
+				C6A3A08A1D7028D200B4C318 /* YLNoCameraView.m in Sources */,
+				C6888FC91D73DA880032C5E3 /* YLLoginViewController.m in Sources */,
 				64E872F31D6DA3E3000E9D2A /* UIScrollView+XY.m in Sources */,
 				64E872ED1D6DA3E3000E9D2A /* NSString+Hashing.m in Sources */,
 			);
@@ -634,6 +751,7 @@
 		};
 		64E872C61D6D9E0E000E9D2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23ECD9128B8FDCE969FB30AE /* Pods-VehicleRecorder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleRecorder/Classes/Other/PrefixHeader.pch";
@@ -647,6 +765,7 @@
 		};
 		64E872C71D6D9E0E000E9D2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D98238EA489C6C7FF821D5 /* Pods-VehicleRecorder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/VehicleRecorder/Classes/Other/PrefixHeader.pch";

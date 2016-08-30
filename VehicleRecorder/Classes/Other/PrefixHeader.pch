@@ -24,6 +24,6 @@
 #import "NSString+Hashing.h" // md5加密
 #import "UITextField+XY.h" // 输入内容是否有效
 
-
+#import "YYCategories.h"
 
 #endif /* PrefixHeader_pch */

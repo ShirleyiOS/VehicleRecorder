@@ -14,4 +14,5 @@ dependencies: \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Library/CYLTabBarController/CYLPlusButton.h \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Library/CYLTabBarController/CYLConstants.h \
   /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Library/CYLTabBarController/CYLTabBarController.h \
-  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Library/CYLTabBarController/UIViewController+CYLTabBarControllerExtention.h
+  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/Library/CYLTabBarController/UIViewController+CYLTabBarControllerExtention.h \
+  /Users/wangshuang/Documents/项目/VehicleRecorder/VehicleRecorder/Classes/OnTheRoad/View/YLCategoryBtn.h

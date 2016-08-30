@@ -94,7 +94,7 @@
  *  更多TabBar自定义设置：比如：tabBarItem 的选中和不选中文字和背景图片属性、tabbar 背景图片属性等等
  */
 - (void)customizeTabBarAppearance:(CYLTabBarController *)tabBarController {
-#warning CUSTOMIZE YOUR TABBAR APPEARANCE
+
     // Customize UITabBar height
     // 自定义 TabBar 高度
     tabBarController.tabBarHeight = 49.f;
